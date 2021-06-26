@@ -1,0 +1,73 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+# norfipc.com/inf/como-cargar-mas-rapido-pagina-servidor-apache.html
+# 6 horas en segundos 21600
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|swf)$">
+    Header set Cache-Control "max-age=21600, public, must-revalidate"
+    #Header set Cache-Control "public"
+    #Header set Expires "Sun, 17 Sep 2017 00:00:00 GMT"
+    FileETag None
+    #comprime los archivos
+    SetOutputFilter DEFLATE
+
+</FilesMatch>
+
+# 1 SEMANA en segundos 604800
+<FilesMatch "\.(js|css)$">
+    Header set Cache-Control "max-age=1, public, must-revalidate"
+    #Header set Cache-Control "public"
+    #Header set Expires "Sun, 17 Sep 2017 00:00:00 GMT"
+    FileETag None
+    #comprime los archivos
+    #SetOutputFilter DEFLATE
+</FilesMatch>
+
+# 1 SEMANA en segundos 604800
+<FilesMatch "\.(xml|txt|json)$">
+    Header set Cache-Control "max-age=1, public, must-revalidate"
+    #Header set Cache-Control "public"
+    #Header set Expires "Sun, 17 Sep 2017 00:00:00 GMT"
+    FileETag None
+    #comprime los archivos
+    #SetOutputFilter DEFLATE
+</FilesMatch>
+
+# 1 día en segundos 86400
+# no ponerlo más porque agarra el axios
+#<FilesMatch "\.(html|htm|php)$">
+    Header set Cache-Control "max-age=1, public, must-revalidate"
+    FileETag None
+    #comprime los archivos
+    SetOutputFilter DEFLATE
+#</FilesMatch>
+
+# norfipc.com/inf/como-cargar-mas-rapido-pagina-servidor-apache.html
+# 1 semana esta en segundo 21600
+<FilesMatch "\.(woff|woff2|ttf|eot)$">
+    Header set Cache-Control "max-age=21600, public, must-revalidate"
+    #Header set Cache-Control "public"
+    #Header set Expires "Sun, 17 Sep 2017 00:00:00 GMT"
+    FileETag None
+    #comprime los archivos
+    SetOutputFilter DEFLATE
+</FilesMatch>

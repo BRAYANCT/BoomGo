@@ -1,0 +1,113 @@
+
+@font-face {
+    font-family: 'Biofit';
+    src: url(biotif/Biotif-Light.ttf) ;
+    font-display: swap;
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Biofit';
+    src: url(biotif/Biotif-LightItalic.ttf) ;
+    font-display: swap;
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Biofit';
+    src: url(biotif/Biotif-Medium.ttf) ;
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Biofit';
+    src: url(biotif/Biotif-MediumItalic.ttf) ;
+    font-display: swap;
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Biofit';
+    src: url(biotif/Biotif-Regular.ttf) ;
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Biofit';
+    src: url(biotif/Biotif-RegularItalic.ttf) ;
+    font-display: swap;
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Biofit';
+    src: url(biotif/Biotif-Black.ttf) ;
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Biofit';
+    src: url(biotif/Biotif-BlackItalic.ttf) ;
+    font-display: swap;
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Biofit';
+    src: url(biotif/Biotif-SemiBold.ttf) ;
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Biofit';
+    src: url(biotif/Biotif-SemiBoldItalic.ttf) ;
+    font-display: swap;
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Biofit';
+    src: url(biotif/Biotif-Bold.ttf) ;
+    font-display: swap;
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Biofit';
+    src: url(biotif/Biotif-BoldItalic.ttf) ;
+    font-display: swap;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Biofit';
+    src: url(biotif/Biotif-ExtraBold.ttf) ;
+    font-display: swap;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Biofit';
+    src: url(biotif/Biotif-ExtraBoldItalic.ttf) ;
+    font-display: swap;
+    font-weight: bolder;
+    font-style: italic;
+}
